@@ -29,7 +29,7 @@ public class TestGreeter {
 
   @Test
   public void fgreetFailedTest() {
-    asertTrue(false);
+    assertTrue(false);
   }
 
   @Test
