@@ -13,6 +13,7 @@ pipeline {
                     echo "Build Number: $buildNumber"
 
                     // Use them in shell commands
+                    export PATH="$PATH:/var/lib/jenkins/.dotnet"
                     sh 'sudo docker --version'
                     sh 'sudo ./usr/bin/dotnet --version'
                 }
