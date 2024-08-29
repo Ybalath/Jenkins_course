@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        DOTNET_ROOT = '/var/lib/jenkins/.dotnet'
+        PATH = "${DOTNET_ROOT}:${env.PATH}"
+    }
     stages {
         stage('Verify Shell Environment') {
             steps {
