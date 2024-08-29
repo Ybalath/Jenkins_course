@@ -19,7 +19,7 @@ pipeline {
                     // Use them in shell commands
                     sh '''
                         sudo docker --version
-                        sudo dotnet --version'''
+                        dotnet --version'''
                 }
             }
         }
